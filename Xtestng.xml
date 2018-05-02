@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Sample Suite" parallel="tests">
+
+
+ <test name="TestA">
+ <parameter name="browser" value="chrome"></parameter>
+    <classes>
+        <class name="TestCases.Google_Search" ></class>  
+    </classes>
+</test>
+
+
+<test name="TestB">
+ <parameter name="browser" value="firefox"></parameter>
+    <classes>
+        <class name="TestCases.Google_Search" ></class>  
+    </classes>
+</test>
+
+
+</suite>
